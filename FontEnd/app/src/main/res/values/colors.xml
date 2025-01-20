@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="color_primary_text">#06d6a0</color>
+    <color name="color_secondary_text">#FFFFFFFF</color>
+    <color name="green">#4DB91C</color>
+    <color name="newGreen">#3C8826</color>
+    <color name="dark">#343a40</color>
+    <color name="lightwhite">#E5E5E5</color>
+    <color name="neonwhite">#AAAAAA</color>
+    <color name="linecolor">#7B7B7B</color>
+    <color name="ActionBarTitleColor">#06d6a0</color>
+    <color name="Blue">#87CEFA</color>
+    <color name="red">#FF0000</color>
+    <color name="orange">#FFA500</color>
+    <color name="wheat">#FFE596</color>
+    <color name="popularity">#8D203C</color>
+    <color name="cardblack">#141414</color>
+    <color name="selected">#3C8826</color>
+    <color name="unselected">#FFFFFFFF</color>
+</resources>

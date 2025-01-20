@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="330dp"
+    android:layout_margin="5dp"
+    app:cardBackgroundColor="@color/cardblack"
+    app:cardCornerRadius="8dp"
+    app:cardElevation="8dp"
+    app:cardMaxElevation="10dp"
+    app:cardPreventCornerOverlap="true"
+    app:cardUseCompatPadding="true">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <!-- ImageVIew to display our Course Image -->
+        <ImageView
+            android:id="@+id/ArtistImage"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="10dp"
+            android:contentDescription="@string/app_name"
+            android:padding="5dp" />
+
+        <!-- Text View to display Course Name -->
+        <TextView
+            android:id="@+id/ArtistName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="10dp"
+            android:layout_toEndOf="@id/ArtistImage"
+            android:text="artistname"
+            android:textColor="@color/neonwhite"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/ArtistPopularity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="15dp"
+            android:layout_alignParentRight="true"
+            android:layout_toEndOf="@id/ArtistName"
+            android:layout_marginEnd="20dp"
+            android:gravity="center_vertical"
+            android:text="Popularity"
+            android:textColor="@color/neonwhite"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            android:textAlignment="textEnd"/>
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/ArtistPopularity"
+            android:layout_toEndOf="@id/ArtistRating"
+            android:layout_marginRight="20dp">
+
+            <TextView
+                android:id="@+id/popularityNumber"
+                android:layout_width="85dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:text="1"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:layout_marginLeft="5dp"></TextView>
+
+            <ProgressBar
+                android:id="@+id/popularityBar"
+                style="?android:progressBarStyleHorizontal"
+                android:layout_width="80dp"
+                android:layout_height="57dp"
+
+                android:layout_alignParentRight="true"
+                android:layout_marginStart="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginBottom="8dp"
+
+                android:indeterminate="false"
+                android:padding="15dp"
+                android:progress="70"
+                android:progressDrawable="@drawable/circle"
+                android:rotation="270"
+                android:backgroundTint="@color/white"
+                android:backgroundTintMode="src_atop"></ProgressBar>
+        </FrameLayout>
+
+        <TextView
+            android:id="@+id/ArtistRating"
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/ArtistName"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="10dp"
+            android:layout_toEndOf="@id/ArtistImage"
+            android:drawablePadding="2dp"
+            android:text="course_rating"
+            android:textColor="@color/neonwhite"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/ArtistSpotify"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/ArtistRating"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="15dp"
+            android:layout_toEndOf="@id/ArtistImage"
+            android:drawablePadding="2dp"
+            android:text="Check out on Spotify"
+            android:textColor="@color/newGreen"></TextView>
+
+        <View
+            android:id="@+id/line"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/linecolor"
+            android:layout_below="@+id/ArtistSpotify"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="15dp" />
+
+
+        <TextView
+            android:id="@+id/PopularAlbumsLabel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/line"
+            android:text="Popular Albums"
+            android:layout_marginLeft="20dp"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:textColor="@color/neonwhite"></TextView>
+        <ImageView
+            android:id="@+id/AlbumImage1"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginBottom="10dp"
+            android:contentDescription="@string/app_name"
+            android:layout_below="@id/PopularAlbumsLabel" />
+        <ImageView
+            android:id="@+id/AlbumImage2"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="10dp"
+            android:contentDescription="@string/app_name"
+            android:layout_below="@id/PopularAlbumsLabel"
+            android:layout_toEndOf="@id/AlbumImage1"/>
+        <ImageView
+            android:id="@+id/AlbumImage3"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="10dp"
+            android:contentDescription="@string/app_name"
+            android:layout_below="@id/PopularAlbumsLabel"
+            android:layout_toEndOf="@id/AlbumImage2"
+            />
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>
